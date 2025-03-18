@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Research | 機器學習與估計理論實驗室</title>
+    <!-- 自訂 Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  <!-- 連結 CSS -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>Machine Learning and Estimation theory Lab</h1>
+        <div class="navbar-toggle" onclick="toggleMenu()">☰</div> <!-- RWD 漢堡按鈕 -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="honor.html">Honor</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="tool.html">Tools</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 研究區塊 -->
+    <div class="research-container">
+        <h1>RESEARCH</h1>
+
+        <div class="research-item">
+            <h2>1 / Privacy Preserving Machine Learning</h2>
+            <p>We study the embedding of cryptography, such as homeomorphic encryption and garbled circuits, into machine learning algorithms in order to reduce the risk of exposing confidential personal information.</p>
+        </div>
+
+        <div class="research-item">
+            <h2>2 / Active Authentication</h2>
+            <p>In collaboration with Princeton University and Iowa State University, we study how to continuously and unintrusively authenticate user's identity based on his/her behavior biometrics. 
+            <!-- <br><a href="https://reurl.cc/pZxEEd" target="_blank">CBS news</a></p> -->
+        </div>
+
+        <div class="research-item">
+            <h2>3 / Kernel Methods</h2>
+            <p>We study the cost-effectiveness and robustness issues in kernel-based machine learning.</p>
+        </div>
+
+        <div class="research-item">
+            <h2>4 / Deep Learning Applications</h2>
+            <p>Scene text recognition, image dehazing, pose estimation, panorama saliency detection, medical image, air pollution prediction.</p>
+        </div>
+
+        <div class="research-item">
+            <h2>5 / Reinforcement Learning</h2>
+            <p>Optimize fan performance using Reinforcement Learning (RL).</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 機器學習與估計理論實驗室</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

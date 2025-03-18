@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Team | 機器學習與估計理論實驗室</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>Machine Learning and Estimation Theory Lab</h1>
+        <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="honor.html">Honor</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="tool.html">Tools</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 團隊介紹 -->
+    <div class="team-container">
+        <h1>OUR TEAM</h1>
+        <!-- 分頁按鈕 -->
+        <div class="tab-menu">
+            <button class="tab-btn active" onclick="openTab('professor')">Professor</button>
+            <button class="tab-btn" onclick="openTab('phd')">Ph.D Students</button>
+            <button class="tab-btn" onclick="openTab('in-service')">In-Service Students</button>
+            <button class="tab-btn" onclick="openTab('master')">Master Students</button>
+            <button class="tab-btn" onclick="openTab('assistant')">Assistant</button>
+            <button class="tab-btn" onclick="openTab('alumni')">Alumni</button>
+            <button class="tab-btn" onclick="openTab('tour')">Tour</button>
+        </div>
+        <!-- 老師 -->
+        <div class="team-section" id="professor">
+            <h2 class="team-title">Professor</h2>
+            <div class="team-row">
+                <div class="team-member">
+                    <img src="graph/peiyuanwu_l.jpg" alt="Professor">
+                    <div class="team-member-info">
+                        <h3>Pei-Yuan Wu</h3>
+                        <p><strong>Associate Professor</strong></p>
+                        <p>Department of Electrical Engineering</p>
+                        <p>National Taiwan University (NTU)</p>
+                        <p>Contact: <a href="mailto:peiyuanwu@ntu.edu.tw">peiyuanwu@ntu.edu.tw</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ph.D Students -->
+        <div class="team-section hidden" id="phd">
+            <h2 class="team-title">Ph.D Students</h2>
+            <div class="team-row">
+                <div class="team-member">
+                    <img src="graph/佳宇.jpg" alt="Ph.D Student">
+                    <div class="team-member-info">
+                        <h3>Jia-Yu Shen</h3>
+                        <p>Ph.D student (GICE)</p>
+                        <p>Contact: <a href="mailto:d08942009@ntu.edu.tw">d08942009@ntu.edu.tw</a></p>
+                    </div>                
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Ph.D Student">
+                    <div class="team-member-info">
+                        <h3>Fu-Jie Zhang</h3>
+                        <p>Ph.D student (GICE)</p>
+                        <p>Contact: <a href="mailto:d09942015@ntu.edu.tw">d09942015@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- In-service Students -->
+        <div class="team-section hidden" id="in-service">
+            <h2 class="team-title">In-Service Students</h2>
+            <div class="team-row">
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="In-Service Student">
+                    <div class="team-member-info">
+                        <h3>Yue-Ying Tsai</h3>
+                        <p>Master student (GICE)</p>
+                        <p>Contact: <a href="mailto:p13942a08@ntu.edu.tw">p13942a08@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="In-Service Student">
+                    <div class="team-member-info">
+                        <h3>Shu-Ting Zhang</h3>
+                        <p>Master student (GICE)</p>
+                        <p>Contact: <a href="mailto:p13942a11@ntu.edu.tw">p13942a11@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Master Students -->
+        <div class="team-section hidden" id="master">
+            <h2 class="team-title">Master Students</h2>
+            <div class="team-row">
+                <div class="team-member">
+                    <img src="graph/YouChen.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>You-Chen Lin</h3>
+                        <p>Master student (Cyber)</p>
+                        <p>Contact: <a href="r13921a30@ntu.edu.tw">r13921a30@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/定楷_V2.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Ting-Kai Hsu</h3>
+                        <p>Master student (GICE)</p>
+                        <p>Contact: <a href="mailto:r13942132@ntu.edu.tw">r13942132@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/哲甄_edited.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Che-Chen Tsao​</h3>
+                        <p>Master student (Cyber)</p>
+                        <p>Contact: <a href="mailto:r12921a31@ntu.edu.tw">r12921a31@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/子矞_edited.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Tzu-Yu Sun</h3>
+                        <p>Master student (GICE)</p>
+                        <p>Contact: <a href="mailto:r12942095@ntu.edu.tw">r12942095@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/翰莘_edited.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Han-Hsin Lin</h3>
+                        <p>Master student (GICE)</p>
+                        <p>Contact: <a href="mailto:r12942143@ntu.edu.tw">r12942143@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/ChunYu.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Chun-Yu Lin</h3>
+                        <p>Master student (GICE)</p>
+                        <p>Contact: <a href="mailto:r12942148@ntu.edu.tw">r12942148@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/佳文.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Chia-Wen Huang</h3>
+                        <p>Master student (GICE)</p>
+                        <p>Contact: <a href="mailto:r11942157@ntu.edu.tw">r11942157@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Yu Wang</h3>
+                        <p>Master student (GICE)</p>
+                        <p>Contact: <a href="mailto:r11942152@g.ntu.edu.tw">r11942152@g.ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/奕方.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Yi-Fang Wang</h3>
+                        <p>Master student (DS)</p>
+                        <p>Contact: <a href="mailto:r11946012@ntu.edu.tw">r11946012@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/乙凌.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>I-Ling Chung</h3>
+                        <p>Master student (GICE)</p>
+                        <p>Contact: <a href="mailto:r11942103@ntu.edu.tw">r11942103@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/俊愷.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Jun-Kai Huang</h3>
+                        <p>Master student (GICE)</p>
+                        <p>Contact: <a href="mailto:r10942186@ntu.edu.tw">r10942186@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/仲偉.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Zhong-Wei Lin</h3>
+                        <p>Master student (GICE)</p>
+                        <p>Contact: <a href="mailto:r10942198@ntu.edu.tw">r10942198@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Ying-Shuo Lee</h3>
+                        <p>Master student (Cyber)</p>
+                        <p>Contact: <a href="mailto:r10921a16@ntu.edu.tw">r10921a16@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/奕安.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Yi-An Lin</h3>
+                        <p>Master student (Cyber)</p>
+                        <p>Contact: <a href="mailto:r09921a13@ntu.edu.tw">r09921a13@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/思翰.jpg" alt="Master Student">
+                    <div class="team-member-info">
+                        <h3>Suu-Han Wang​</h3>
+                        <p>Master student (Cyber)</p>
+                        <p>Contact: <a href="mailto:r09921a31@ntu.edu.tw">r09921a31@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assistant -->
+        <div class="team-section hidden" id="assistant">
+            <h2 class="team-title">Assistant</h2>
+            <div class="team-row">
+                <div class="team-member">
+                    <img src="graph/郁瑋.jpg" alt="Assistant">
+                    <div class="team-member-info">
+                        <h3>Yu-Wei Zhou​</h3>
+                        <p>Admin. Assistant</p>
+                        <p>Contact: <a href="mailto:yuwei19@ntu.edu.tw">yuwei19@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alumni -->
+        <div class="team-section hidden" id="alumni">
+            <h2 class="team-title">Alumni</h2>
+            <div class="team-row">
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Chun-Yi Dai​</h3>
+                        <p>​Master student (2024)</p>
+                        <p>Contact: <a href="mailto:r09921a22@ntu.edu.tw">r09921a22@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/yu_ting.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Yu-Ting Huang</h3>
+                        <p>​Master student (2024)</p>
+                        <p>Contact: <a href="mailto:r11946008@ntu.edu.tw">r11946008@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Shao-Yu Yan</h3>
+                        <p>Master student (2024)</p>
+                        <p>Contact: <a href="mailto:p09942a02@ntu.edu.tw">p09942a02@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Ji-Min Lin</h3>
+                        <p>Master student (2024)</p>
+                        <p>Contact: <a href="mailto:r07946009@ntu.edu.tw">r07946009@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/彥儒.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Yan-Ru Lai</h3>
+                        <p>Master student (2024)</p>
+                        <p>Contact: <a href="mailto:r09942079@ntu.edu.tw">r09942079@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/耘偉.png" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Yun-Wei Chiu</h3>
+                        <p>Master student (2023)</p>
+                        <p>Contact: <a href="mailto:r09942075@ntu.edu.tw">r09942075@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/東霖.png" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Tung-Lin Tsai</h3>
+                        <p>Master student (2023)</p>
+                        <p>Contact: <a href="mailto:r09921a20@ntu.edu.tw">r09921a20@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Hong-Xin Lin</h3>
+                        <p>Master student (2023)</p>
+                        <p>Contact: <a href="mailto:r09942139@ntu.edu.tw">r09942139@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Zi-Yi Liao</h3>
+                        <p>Master student (2023)</p>
+                        <p>Contact: <a href="mailto:r08921a08@ntu.edu.tw">r08921a08@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/柏宏.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Po-Hung Yeh</h3>
+                        <p>Master student (2023)</p>
+                        <p>Contact: <a href="mailto:r09946018@ntu.edu.tw">r09946018@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Zhi-Yao Zhang</h3>
+                        <p>Master student (2023)</p>
+                        <p>Contact: <a href="mailto:johney0416@gmail.com">johney0416@gmail.com</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/繼綸.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Gi-Luen Huang</h3>
+                        <p>Master student (2023)</p>
+                        <p>Contact: <a href="mailto:r09942171@ntu.edu.tw">r09942171@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/緯俊.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Wei-Jyun Hong</h3>
+                        <p>Master student (2022)</p>
+                        <p>Contact: <a href="mailto:r08942063@ntu.edu.tw">r08942063@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/Jay.png" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Yu-Chieh Chao</h3>
+                        <p>Master student (2022)</p>
+                        <p>Contact: <a href="mailto:r09942074@ntu.edu.tw">r09942074@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/芃彣.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Peng-Wen Chen</h3>
+                        <p>Master student (2021)</p>
+                        <p>Contact: <a href="mailto:r08942085@ntu.edu.tw">r08942085@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/宗山.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Tsung-Shan Yang</h3>
+                        <p>Master student (2021)</p>
+                        <p>Contact: <a href="mailto:tsungsha@usc.edu">tsungsha@usc.edu</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/佳灝.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Jia-Hao Bai</h3>
+                        <p>Master student (2021)</p>
+                        <p>Contact: <a href="mailto:r07942092@ntu.edu.tw">r07942092@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Tsung­-Hsien Lin</h3>
+                        <p>Master student (2021)</p>
+                        <p>Contact: <a href="mailto:r06942119@ntu.edu.tw">r06942119@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Chia-Lin Chang</h3>
+                        <p>Master student (2020)</p>
+                        <p>Contact: <a href="mailto:r06942098@ntu.edu.tw">r06942098@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Po-Min Hsu</h3>
+                        <p>Master student (2020)</p>
+                        <p>Contact: <a href="mailto:r07942091@ntu.edu.tw">r07942091@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Ju-Chin Chao</h3>
+                        <p>Master student (2020)</p>
+                        <p>Contact: <a href="mailto:r07942078@ntu.edu.tw">r07942078@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="graph/灰白臉.jpg" alt="Alumni">
+                    <div class="team-member-info">
+                        <h3>Bo-Wei Tseng</h3>
+                        <p>Master student (2019)</p>
+                        <p>Contact: <a href="mailto:r06942098@ntu.edu.tw">r06942098@ntu.edu.tw</a></p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team-section hidden" id="tour">
+            <h2 class="team-title">Lab Tour & Activities</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="graph/福隆.jpeg" alt="Tour Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="graph/老師慶生.jpeg" alt="Tour Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="graph/出遊照_2.jpeg" alt="Tour Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="graph/出遊照.jpeg" alt="Tour Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="graph/202407畢業照2.jpg" alt="Tour Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="graph/202407畢業照1.jpg" alt="Tour Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="graph/202409老師慶生.jpg" alt="Tour Image 4">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 機器學習與估計理論實驗室</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar").classList.toggle("active");
+        }
+
+        function openTab(tabName) {
+            let sections = document.querySelectorAll('.team-section');
+            let buttons = document.querySelectorAll('.tab-btn');
+
+            // 隱藏所有區塊
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // 取消所有按鈕的 active 樣式
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // 顯示對應的區塊
+            document.getElementById(tabName).classList.remove('hidden');
+
+            // 標記當前按鈕為 active
+            event.currentTarget.classList.add('active');
+        }
+
+        // 頁面載入時預設顯示 Professor
+        document.addEventListener("DOMContentLoaded", function() {
+            openTab('professor');
+        });
+    </script>
+
+</body>
+</html>

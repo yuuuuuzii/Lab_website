@@ -1,0 +1,911 @@
+header h1 {
+    text-align: center; /* 讓標題置中 */
+    font-size: 36px; /* 設定標題字體大小 */
+    font-weight: bold; /* 設定字體加粗 */
+    margin-bottom: 30px; /* 增加底部間距，讓標題與選單分開 */
+    padding-top: 20px; /* 增加頂部間距，讓標題不會貼太上面 */
+}
+
+/* 確保 header 是 relative，讓 .navbar-toggle 正確定位 */
+header {
+    position: relative;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#f8f8f8;
+    text-align: center;
+    padding-top: 70px; /* 增加上方間距，避免內容被 Navbar 遮住 */
+}
+
+/* 設定導覽列的樣式 */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 1000; /* 保持在最上層 */
+}
+
+/* 桌機選單 */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+/* 設定選單間距 */
+.navbar ul li {
+    margin: 0 20px;
+}
+
+/* 設定連結樣式 */
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: lightgray;
+}
+
+.content {
+    display: flex; /* 讓內容橫向排列 */
+    align-items: center; /* 讓內容垂直置中 */
+    justify-content: space-between; /* 讓左右兩邊平均分佈 */
+    padding: 50px;
+}
+.text h1, .text h2 {
+    font-size: 36px;
+    text-align: center;
+}
+/* 左邊文字區塊 */
+.text {
+    width: 30%; /* 讓左側佔 50% */
+    padding-left: 240px; /* 往右推 30px，讓它不貼邊 */
+    text-align: justify; /* 讓文字靠左對齊 */
+    word-wrap: break-word; /* 讓長字換行 */
+    line-height: 2.0; /* 增加行距，讓文字更好讀 */
+}
+
+/* 右邊圖片區塊 */
+.image {
+    width: 50%; /* 讓右邊佔 50% */
+    text-align: right; 
+}
+
+/* 限制圖片大小，讓它不會超出範圍 */
+.image img {
+    max-width: 100%; /* 讓圖片寬度不超過父元素 */
+    height: auto; /* 讓圖片高度自動調整 */
+}
+
+/* 整個區塊置中 */
+.research-interests {
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+/* 設定 h2 標題 */
+.research-interests h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* 讓圖示橫向排列 */
+.interests-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px; /* 設定每個項目之間的間距 */
+}
+
+/* 每個興趣項目 */
+.interest {
+    display: flex;
+    flex-direction: column; /* 讓圖片和文字垂直排列 */
+    align-items: center; /* 讓圖片和文字都置中 */
+    text-align: center; /* 讓文字置中 */
+    width: 120px; /* 設定統一的區塊寬度，避免圖片寬度影響對齊 */
+}
+
+/* 設定圖片大小 */
+.interest img {
+    width: 100px; /* 設定統一的寬度 */
+    height: 100px; /* 設定統一的高度 */
+    object-fit: contain; /* 確保圖片完整顯示 */
+    display: block;
+    margin: 0 auto; /* 讓圖片置中 */
+}
+
+/* 整個 Contact Us 區塊 */
+.contact {
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+/* Contact 標題 */
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* 讓左右對齊 */
+.contact-container {
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    gap: 100px; /* 設定左右間距 */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 左右欄位 */
+.contact-item {
+    text-align: center;
+    width: 300px;
+}
+
+/* 設定標題 */
+.contact-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* 讓文字斜體，並且加點間距 */
+.contact-item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* 讓 Email 連結有底線 */
+.contact-item a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+/* 讓 Contact 和 收學生須知的超連結變成金色 */
+.gold-link {
+    color: #D4AF37 !important; /* 金色，並強制應用 */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.gold-link:hover {
+    text-decoration: underline;
+}
+
+
+
+.map-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 80%; /* 讓地圖適應頁面 */
+    max-width: 800px;
+    height: 400px;
+    border-radius: 10px; /* 讓地圖邊角圓滑 */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 讓超連結變黑色，且不顯示底線 */
+.content a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px; /* 設定字體大小 */
+    font-weight: bold; /* 設定字體加粗 */
+}
+
+/* 當滑鼠懸停時，仍保持黑色，但可加底線 */
+.content a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Honor 頁面 */
+.honor-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 單個榮譽獎項 */
+.honor-item {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 80%;
+}
+
+/* 標題樣式 */
+.honor-item h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 內容樣式 */
+.honor-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* 課程頁面樣式 */
+.course-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.course {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 80%;
+}
+
+/* 課程標題 */
+.course h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* 超連結設置為金色，並確保開啟新視窗 */
+.course a {
+    color: #D4AF37;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.course a:hover {
+    text-decoration: underline;
+}
+
+/* 研究頁面 */
+.research-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 單個研究項目 */
+.research-item {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 80%;
+}
+
+/* 研究標題 */
+.research-item h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 研究內容 */
+.research-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* CBS news 連結 */
+.research-item a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.research-item a:hover {
+    text-decoration: underline;
+}
+
+/* 讓 Publication 頁面內容置中 */
+.publication-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ---- 分頁按鈕 ---- */
+.tab-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.tab-btn {
+    background: #D4AF37; /* 金色 */
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.tab-btn.active {
+    background: #B8860B; /* 深金色 */
+}
+
+.tab-btn:hover {
+    background: #B8860B;
+}
+
+/* ---- 隱藏未選擇的分頁 ---- */
+.hidden {
+    display: none;
+}
+
+
+/* 單篇文章區塊 */
+.publication-item {
+    background: #ffffff;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 80%;
+}
+
+/* 文章標題 */
+.publication-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* PDF 按鈕 */
+.pdf-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #28a745;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pdf-btn:hover {
+    background: #218838;
+}
+
+/* Tool 頁面 */
+.tool-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 單篇文章 */
+.tool-item {
+    background: #E0E0E0; /* 設定底色為淺灰色 */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 80%;
+    border-left: 5px solid #2E7D32; /* 左側加入墨綠色標示 */
+}
+
+/* 標題樣式 */
+.tool-item h2 {
+    font-size: 22px;
+    color: #2E7D32; /* 墨綠色標題 */
+    margin-bottom: 10px;
+}
+
+/* 內容樣式 */
+.tool-item p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* 文章按鈕 */
+.tool-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #2E7D32;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.tool-btn:hover {
+    background: #256629; /* 深一點的墨綠色 */
+}
+
+/* Team 頁面 */
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 每個身分類別外層白色區塊 */
+.team-section {
+    background: #FFFFFF;
+    padding: 20px;
+    margin: 40px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 標題樣式 */
+.team-title {
+    font-size: 24px;
+    color: #D4AF37; /* 金色標題 */
+    margin-top: 20px;
+    border-bottom: 3px solid #D4AF37;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* 成員排列 (整體置中) */
+.team-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* 讓整體置中 */
+}
+
+/* 單個成員區塊 */
+.team-member {
+    background: #E0E0E0;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 讓內容在卡片內部置中 */
+    width: 650px; /* 固定寬度，確保置中 */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    margin: 0 auto; /* 讓每個卡片都置中 */
+}
+
+/* 照片 (固定比例 269px x 323px) */
+.team-member img {
+    width: 269px;
+    height: 323px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 10px; /* 讓邊角稍微圓滑 */
+}
+
+/* 文字區塊 */
+.team-member-info {
+    text-align: left;
+    flex-grow: 1;
+}
+
+/* 文字樣式 */
+.team-member h3 {
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #444;
+    margin: 5px 0;
+}
+
+/* Email 超連結 */
+.team-member a {
+    color: #D4AF37;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.team-member a:hover {
+    text-decoration: underline;
+}
+
+/* 圖片相簿區塊 - 讓整體置中 */
+.gallery-container {
+    max-width: 1400px; /* 設定最大寬度 */
+    margin: 0 auto; /* 讓 gallery 整體置中 */
+    padding: 20px;
+    text-align: center;
+}
+
+/* 圖片排列 - 讓內容置中並確保間距 */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 確保圖片置中 */
+    gap: 20px; /* 設定圖片之間的間距 */
+    max-width: 1000px; /* 限制最大寬度 */
+    margin: 0 auto; /* 讓 .gallery 本身也置中 */
+}
+
+/* 單張圖片的區塊 */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    width: calc(33.33% - 20px); /* 桌機每行 3 張，扣除間距 */
+    max-width: 350px; /* 限制單張圖片最大寬度 */
+    text-align: center;
+}
+
+/* 圖片樣式 */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 滑鼠懸停時放大圖片 */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 1024px) {
+    .team-member {
+        width: 80%; /* 讓卡片在平板上變窄 */
+    }
+    .gallery {
+        max-width: 800px;
+    }
+    .gallery-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* 讓內容區塊從橫向變為直向 */
+        align-items: center;
+        text-align: center;
+    }
+
+    .text {
+        width: 90%; /* 讓左邊文字區塊適應小螢幕 */
+        padding-left: 0; /* 移除 padding 避免文字貼邊 */
+    }
+
+    .image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image img {
+        width: 80%; /* 讓圖片在小螢幕適應 */
+    }
+
+    .interests-container {
+        flex-direction: column; /* 讓研究領域的圖示從水平變成垂直排列 */
+        align-items: center;
+    }
+
+    .contact-container {
+        flex-direction: column; /* 讓聯絡資訊在小螢幕上下排列 */
+        gap: 30px; /* 調整間距 */
+    }
+
+    .map-container iframe {
+        width: 100%; /* 讓地圖適應小螢幕 */
+        height: 300px;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: black;
+        padding: 10px 0;
+        z-index: 999;
+    }
+
+    /* 點開漢堡選單後顯示 */
+    .navbar.active {
+        display: flex;
+    }
+
+    /* 固定漢堡按鈕 */
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        background: black;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        width: 50px;
+        position: fixed;
+        left: 20px;
+        top: 15px;
+        z-index: 1100;
+    }
+
+    /* 選單垂直排列 */
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        padding: 10px 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    .navbar ul li a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .navbar ul li a:hover {
+        color: lightgray;
+    }
+
+    /* ----- Contact Us 區塊 ----- */
+    .contact {
+        text-align: center;
+        padding: 50px 0;
+        margin-top: 50px;
+    }
+
+    /* Contact 標題 */
+    .contact h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    /* 讓 Office 和 Lab 內容水平對齊 */
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* 讓每個 Contact Item 都置中 */
+    .contact-item {
+        text-align: center;
+        width: 300px;
+    }
+
+    /* 標題樣式 */
+    .contact-item h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    /* 文字間距 */
+    .contact-item p {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    /* Email 連結 */
+    .contact-item a {
+        text-decoration: underline;
+        color: inherit;
+    }
+
+    .contact-container {
+            flex-direction: column; /* 讓 Office 和 Lab 變為上下排列 */
+            gap: 30px;
+    }
+
+    .course-container {
+            padding: 10px;
+    }
+
+    .course {
+            width: 95%; /* 讓區塊適應小螢幕 */
+            text-align: center;
+    }
+    
+    .course h2 {
+            font-size: 22px;
+    }
+    
+    .course p {
+            font-size: 14px;
+    }
+
+    .research-container {
+        padding: 10px;
+    }
+
+    .research-item {
+        width: 95%;
+        text-align: center;
+    }
+
+    .research-item h2 {
+        font-size: 20px;
+    }
+
+    .research-item p {
+        font-size: 14px;
+    }
+
+    .publication-container {
+        padding: 10px;
+    }
+
+    .publication-item {
+        width: 95%;
+    }
+
+    .tab-menu {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .tab-btn {
+        width: 90%;
+    }
+
+    
+    .honor-container {
+        padding: 10px;
+    }
+
+    .honor-item {
+        width: 95%;
+        text-align: center;
+    }
+
+    .honor-item h2 {
+        font-size: 20px;
+    }
+
+    .honor-item p {
+        font-size: 14px;
+    }
+
+    .tool-container {
+        padding: 10px;
+    }
+
+    .tool-item {
+        width: 95%;
+        text-align: center;
+    }
+
+    .tool-item h2 {
+        font-size: 20px;
+    }
+
+    .tool-item p {
+        font-size: 14px;
+    }
+
+    .tool-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+        width: 90%; /* 讓卡片在手機上自適應 */
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 180px;
+    }
+
+    .team-member-info {
+        text-align: center;
+    }
+
+    .gallery {
+        max-width: 100%;
+    }
+    .gallery-item {
+        width: calc(100% - 20px);
+    }
+}
+
+
+
+@media (min-width: 769px) {
+    .navbar {
+        display: flex;
+        justify-content: center; /* 讓選單內容置中 */
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 0 20px;
+    }
+
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .navbar ul li a:hover {
+        color: lightgray;
+    }
+
+    /* 大螢幕時隱藏漢堡選單 */
+    .navbar-toggle {
+        display: none;
+    }
+
+    .team-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+    }
+}
+

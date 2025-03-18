@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Courses | 機器學習與估計理論實驗室</title>
+    <!-- 自訂 Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  <!-- 連結 CSS -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>Machine Learning and Estimation theory Lab</h1>
+        <div class="navbar-toggle" onclick="toggleMenu()">☰</div> <!-- RWD 漢堡按鈕 -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="honor.html">Honor</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="tool.html">Tools</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 內容區 -->
+    <div class="course-container">
+        <h1>COURSES</h1>
+
+        <div class="course">
+            <h2>1 / 機器學習 <a href="https://ntueemlta2022.github.io/?fbclid=IwAR1wFSnT5ZrJqvITltm9jXDY_bjMLRuM2i44k9EaYDCmgnfaIZrcKgxYEaI" target="_blank">Machine Learning</a></h2>
+            <p><em>111-1 / Fall 2022</em></p>
+            <p><em>112-1 / Fall 2023</em></p>
+            <p><em>113-1 / Fall 2024</em></p>
+        </div>
+
+        <div class="course">
+            <h2>2 / 資料結構 Data Structure</h2>
+            <p><em>110-2 / Spring 2022</em></p>
+            <p><em>111-2 / Spring 2023</em></p>
+            <p><em>112-2 / Spring 2024</em></p>
+            <p><em>113-2 / Spring 2025</em></p>
+        </div>
+
+        <div class="course">
+            <h2>3 / 智慧醫療程式設計 <br> Python Programming for Intelligent Medicine</h2>
+            <p><em>111-2 / Spring 2023</em></p>
+            <p><em>112-2 / Spring 2024</em></p>
+            <p><em>113-2 / Spring 2025</em></p>
+        </div>
+        
+        <div class="course">
+            <h2>4 / 永續發展之工程設計與實作 <br> Engineering Design and Implementation for Sustainable Development</h2>
+            <p><em>112-2 / Spring 2024</em></p>
+            <p><em>113-2 / Spring 2025</em></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 機器學習與估計理論實驗室</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
